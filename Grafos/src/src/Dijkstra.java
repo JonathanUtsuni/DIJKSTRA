@@ -7,7 +7,6 @@ import javax.swing.JTextArea;
 public class Dijkstra {
 
   public static void main(String args[]) {
-    Calculo cl = new Calculo();
     JTextArea V = new JTextArea();
     String saida = "Nó \tA \tB \tC \tD\n";
     int c = 1;
