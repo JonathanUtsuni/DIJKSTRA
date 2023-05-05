@@ -34,7 +34,7 @@ public class Dijkstra {
 
     System.out.print("Entre com o vértice de origem: ");
     origem = in.nextInt();
-    cl.calc(nos, origem);
+    d.calc(nos, origem);
     System.out.println("O Caminho mais curto da origem \t" + origem + "\n Todos os outros vertices : \n");
     for (i = 1; i <= nos; i++)
       if (i != origem)
@@ -51,22 +51,6 @@ public class Dijkstra {
 
   public int distancia[] = new int[10]; // Vetor das distâncias
   public static int custo[][] = new int[10][10]; // Matiz
-
-  public int[] getDistancia() {
-    return distancia;
-  }
-
-  public void setDistancia(int[] distancia) {
-    this.distancia = distancia;
-  }
-
-  public static int[][] getCusto() {
-    return custo;
-  }
-
-  public static void setCusto(int[][] custo) {
-    Calculo.custo = custo;
-  }
 
   // Método que calcula a menor distância
   public void calc(int n, int origem) {
